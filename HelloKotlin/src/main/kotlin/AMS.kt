@@ -1,20 +1,26 @@
+package Aquarium
 import java.util.*
 
 fun main(args: Array<String>){
     println("Hello, ${args[0]}")
     feedTheFish()
 
-    /*var bubbles = 0
+    var bubbles = 0
     while (bubbles < 50){
         bubbles++
     }
 
+
     //repeat (function from standard library)
     repeat(2){
         println("A fish is swimming")
-    }*/
+    }
 
     eagerExample()
+}
+
+fun swim(){
+    //swim!
 }
 
 fun eagerExample(){
@@ -68,7 +74,7 @@ fun isDirty(dirty: Int) = dirty > 30
 
 fun isSunday(day: String) = day == "Sunday"
 
-
+val waterFilter: (Int) -> Int = { dirty -> dirty / 2}
 
 fun feedTheFish(){
     val day = randomDay()
